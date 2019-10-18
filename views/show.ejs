@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Car show page</h1>
+
+        <a href="/cars/<%= cars._id %>/edit">Edit</a>
+
+        The <%=cars.name; %> is  <%=cars.color; %>.
+        <% if(cars.readyToGO === true){ %>
+            It is ready to Go
+        <% } else { %>
+            It is not ready to Go
+        <% } %>
+    </body>
+</html>

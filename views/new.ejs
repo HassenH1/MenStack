@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="/css/app.css">
+    </head>
+    <body>
+        <h1>New Car page</h1>
+        <!--  NOTE: action will be the route, method will be the HTTP verb-->
+        <!-- action is where we are sending the info to on our server -->
+     <!--    method is what type off http request we will make from the browser to the
+        server -->
+        <form action="/cars" method="POST">
+            Name: <input type="text" name="name" /><br/>
+            Color: <input type="text" name="color" /><br/>
+            Is Ready To Go: <input type="checkbox" name="readyToEGo" /><br/>
+            <input type="submit" name="" value="Create a Car"/>
+        </form>
+    </body>
+</html>
